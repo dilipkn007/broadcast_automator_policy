@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Makhanchor Broadcast Automator</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        h1 {
+            color: #1a1a1a;
+            font-size: 28px;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h2 {
+            color: #2c3e50;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+        p, li {
+            font-size: 16px;
+            color: #555555;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .highlight {
+            background-color: #fcf8e3;
+            border-left: 4px solid #f0ad4e;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .highlight p {
+            margin: 0;
+            font-weight: 500;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #888888;
+            border-top: 1px solid #eaeaea;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p><strong>Effective Date:</strong> August 9, 2026</p>
+        <p>This Privacy Policy describes how <strong>Makhanchor</strong> ("we", "us", or "our") collects, uses, stores, and protects user data when you use the <strong>Makhanchor Broadcast Automator</strong> mobile application (the "App").</p>
+
+        <h2>1. Data Collection and Usage</h2>
+        <p>The App is designed to help you manage and execute message broadcasts to your contacts. To facilitate this, the App collects and processes the following information:</p>
+        <ul>
+            <li><strong>Contact Information:</strong> We collect contact names and phone numbers that you import (via CSV file or manual creation) for campaign list management.</li>
+            <li><strong>Message Templates:</strong> We store the message text/templates that you write inside the App to be broadcasted to your contacts.</li>
+            <li><strong>Media Attachments:</strong> Any images or media files you upload to attach to your broadcasts are stored locally or uploaded to your secure cloud database instance to enable sending.</li>
+        </ul>
+        <p>All of the above data is stored securely in your configured private <strong>Supabase</strong> database instance and is used solely for the functionality of running message broadcasts.</p>
+
+        <h2>2. Android Accessibility Service API Usage</h2>
+        <div class="highlight">
+            <p><strong>Important Notice regarding Accessibility Services:</strong></p>
+            <p>Makhanchor Broadcast Automator utilizes Android's <strong>AccessibilityService API</strong> locally on your device to automate sending messages through WhatsApp. This service is essential to eliminate the manual effort of pasting and sending broadcast messages one-by-one.</p>
+        </div>
+        <ul>
+            <li><strong>Local Action Only:</strong> The Accessibility Service only interacts with the WhatsApp application on the foreground screen to locate the message field, paste the user-defined text, and perform a click event on the standard "Send" button.</li>
+            <li><strong>No Data Scraping or Monitoring:</strong> The Accessibility Service does not read, capture, save, monitor, or transmit any other screen content, user activities, keystrokes, personal chats, or device notifications.</li>
+            <li><strong>No Transmission:</strong> Any action executed by the Accessibility Service occurs entirely locally on the device and is never sent to external servers.</li>
+        </ul>
+
+        <h2>3. Data Sharing</h2>
+        <p>We do not share, sell, lease, or distribute any user data (including contact lists, phone numbers, or message content) with third-party advertising companies, analytics services, or external platforms. All data remains strictly within your private database infrastructure.</p>
+
+        <h2>4. Data Retention and Deletion</h2>
+        <p>You retain full control over your data. You can delete individual contacts, broadcast campaigns, or message drafts at any time directly within the App interface. Deleting this information will permanently remove it from your database.</p>
+
+        <h2>5. Information Security</h2>
+        <p>We implement industry-standard encryption protocols (HTTPS/SSL) to protect your database credentials and any data in transit between the App and the Supabase database. However, please ensure that you safeguard your device access and database credentials to maintain overall security.</p>
+
+        <h2>6. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the effective date at the top.</p>
+
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at:</p>
+        <p><strong>Email:</strong> support@makhanchor.com</p>
+
+        <div class="footer">
+            &copy; 2026 Makhanchor. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
